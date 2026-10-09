@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import axios from "axios";
 import "./Profile.css";
 
-const API_URL = "http://127.0.0.1:8000/auth/profile/";
+const API_URL = "https://peerlearn-4.onrender.com/auth/profile/";
 
 const AVAILABLE_SKILLS = [
     "C", "C++", "Java", "Python", "JavaScript",
