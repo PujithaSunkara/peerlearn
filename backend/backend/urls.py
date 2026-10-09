@@ -1,7 +1,7 @@
 
 from django.contrib import admin
 from django.urls import path
-
+from django.http import JsonResponse
 from accounts.views import (
     RegisterView,
     LoginView,
@@ -24,7 +24,10 @@ from learning.views import CreateVideoRoomView,AgoraTokenView
 
 urlpatterns = [
     path("admin/", admin.site.urls),
-
+    path("", lambda request: JsonResponse({
+    "message": "PeerLearn backend is running!",
+    "status": "success"
+})),
     # Authentication
     path("auth/register/", RegisterView.as_view(), name="register"),
     path("auth/login/", LoginView.as_view(), name="login"),
