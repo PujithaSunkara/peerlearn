@@ -4,7 +4,7 @@ import { useNavigate } from "react-router-dom";
 import axios from "axios";
 import "./Question.css";
 
-const BASE_URL = "http://127.0.0.1:8000";
+const BASE_URL = "https://peerlearn-4.onrender.com";
 const PROFILE_URL = `${BASE_URL}/auth/profile/`;
 const API_URL = `${BASE_URL}/auth/skill-quiz/`;
 const SUBMIT_URL = `${BASE_URL}/auth/skill-quiz/submit/`;

@@ -45,7 +45,7 @@ function Profile() {
     async function fetchSkillScores() {
         try {
             const response = await axios.get(
-                "http://127.0.0.1:8000/auth/skill-scores/",
+                "https://peerlearn-4.onrender.com/auth/skill-scores/",
                 authConfig()
             );
 

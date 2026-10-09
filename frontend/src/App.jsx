@@ -44,7 +44,7 @@ function App() {
         try {
 
             const response = await axios.post(
-                "http://localhost:8000/refresh/",
+                "https://peerlearn-4.onrender.com/refresh/",
                 {
                     refresh: refreshToken
                 }

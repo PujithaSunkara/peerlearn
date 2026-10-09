@@ -26,7 +26,7 @@ function Login() {
             setLoading(true);
 
             const response = await axios.post(
-                "http://127.0.0.1:8000/auth/login/",
+                "https://peerlearn-4.onrender.com/auth/login/",
                 {
                     email: email,
                     password: password

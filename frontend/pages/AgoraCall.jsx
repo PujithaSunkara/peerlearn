@@ -4,7 +4,7 @@ import axios from "axios";
 import AgoraRTC from "agora-rtc-sdk-ng";
 import "./AgoraCall.css";
 
-const BASE_URL = "http://127.0.0.1:8000";
+const BASE_URL = "https://peerlearn-4.onrender.com";
 
 const CREATE_ROOM_URL = `${BASE_URL}/auth/agora/rooms/create/`;
 const TOKEN_URL = `${BASE_URL}/auth/agora/token/`;

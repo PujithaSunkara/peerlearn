@@ -45,7 +45,7 @@ function Register() {
             setLoading(true);
 
             const response = await axios.post(
-                "http://localhost:8000/auth/register/",
+                "https://peerlearn-4.onrender.com/auth/register/",
                 {
                     username: username,
                     email: email,
@@ -108,7 +108,7 @@ function Register() {
             setLoading(true);
 
             const response = await axios.post(
-                "http://localhost:8000/auth/verify-otp/",
+                "https://peerlearn-4.onrender.com/auth/verify-otp/",
                 {
                     otp: otp
                 },
@@ -185,7 +185,7 @@ function Register() {
             setResending(true);
 
             const response = await axios.post(
-                "http://localhost:8000/auth/resend-otp/",
+                "https://peerlearn-4.onrender.com/auth/resend-otp/",
                 {},
                 {
                     withCredentials: true

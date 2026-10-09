@@ -61,7 +61,7 @@ function Form({onProfileComplete}) {
         try {
 
             const response = await axios.post(
-                "http://127.0.0.1:8000/auth/profile/",
+                "https://peerlearn-4.onrender.com/auth/profile/",
                 {
                     year: Number(year),
                     branch: branch,
