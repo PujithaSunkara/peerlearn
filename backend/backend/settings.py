@@ -29,10 +29,11 @@ SECRET_KEY = os.getenv(
 
 DEBUG = os.getenv("DEBUG", "True").lower() == "true"
 
-ALLOWED_HOSTS = os.getenv(
-    "ALLOWED_HOSTS",
-    "localhost,127.0.0.1,peerlearn-4.onrender.com"
-).split(",")
+ALLOWED_HOSTS = [
+    "localhost",
+    "127.0.0.1",
+    "peerlearn-4.onrender.com",
+]
 
 
 # ==========================================
@@ -153,14 +154,9 @@ REST_FRAMEWORK = {
 # ==========================================
 
 CORS_ALLOWED_ORIGINS = [
-    origin.strip().rstrip("/")
-    for origin in os.getenv(
-        "CORS_ALLOWED_ORIGINS",
-        "http://localhost:5173"
-    ).split(",")
-    if origin.strip()
+    "http://localhost:5173",
+    "https://peerlearn-gamma.vercel.app",
 ]
-
 CORS_ALLOW_CREDENTIALS = True
 
 
@@ -177,12 +173,7 @@ CSRF_COOKIE_SECURE = not DEBUG
 # Configure this if your frontend uses Django session/CSRF
 # authentication across origins. JWT-only APIs may not need it.
 CSRF_TRUSTED_ORIGINS = [
-    origin.strip().rstrip("/")
-    for origin in os.getenv(
-        "CSRF_TRUSTED_ORIGINS",
-        ""
-    ).split(",")
-    if origin.strip()
+    "https://peerlearn-gamma.vercel.app",
 ]
 
 
