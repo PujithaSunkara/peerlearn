@@ -126,6 +126,7 @@ REST_FRAMEWORK = {
 
 CORS_ALLOWED_ORIGINS = [
     "http://localhost:5173",
+    "https://vercel.com/agentx4/peerlearn",
 ]
 
 CORS_ALLOW_CREDENTIALS = True
