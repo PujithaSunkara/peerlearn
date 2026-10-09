@@ -29,14 +29,10 @@ SECRET_KEY = os.getenv(
 
 DEBUG = os.getenv("DEBUG", "True").lower() == "true"
 
-ALLOWED_HOSTS = [
-    host.strip()
-    for host in os.getenv(
-        "ALLOWED_HOSTS",
-        "localhost,127.0.0.1"
-    ).split(",")
-    if host.strip()
-]
+ALLOWED_HOSTS = os.getenv(
+    "ALLOWED_HOSTS",
+    "localhost,127.0.0.1,peerlearn-4.onrender.com"
+).split(",")
 
 
 # ==========================================
